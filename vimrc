@@ -1,13 +1,13 @@
-// NOTE: I no longer use this config (or vim). I've switched to spacemacs (https://www.spacemacs.org/)
-// 
-// I finally ditched Vim. I spent far too long tweaking my vimrc -- trying to pull haphazardly from others' 
-// vim configs and ignorantly fiddling with vimscript -- only to get a really subpar environment. Spacemacs 
-// gives you the maneuverability of vim, the power of emacs, and nearly the ease-of-config of VsCode. I'm 
-// really loving it thus far. 
-//
-// Feel free to borrow from this config, but know that it isn't all that great. For those who aren't sworn to 
-// any particular editor yet, I'd advise using vim until you're somewhat comfortable with the keybinds, and
-// then switch to spacemacs asap. 
+" NOTE: I no longer use this config (or vim). I've switched to spacemacs (https://www.spacemacs.org/)
+" 
+" I finally ditched Vim. I spent far too long tweaking my vimrc -- trying to pull haphazardly from others' 
+" vim configs and ignorantly fiddling with vimscript -- only to get a really subpar environment. Spacemacs 
+" gives you the maneuverability of vim, the power of emacs, and nearly the ease-of-config of VsCode. I'm 
+" really loving it thus far. 
+"
+" Feel free to borrow from this config, but know that it isn't all that great. For those who aren't sworn to 
+" any particular editor yet, I'd advise using vim until you're somewhat comfortable with the keybinds, and
+" then switch to spacemacs asap. 
 
 
 scripte utf-8
