@@ -1,3 +1,9 @@
+" NOTE: I no longer use this config (or vim). I've switched to spacemacs (https://www.spacemacs.org/)
+"
+" Feel free to borrow from this config, but know that it is really subpar. For those who aren't sworn to 
+" any particular editor yet, I'd advise using vim until you're somewhat comfortable with the keybinds, and
+" then switch to spacemacs asap. 
+
 scripte utf-8
 
 
