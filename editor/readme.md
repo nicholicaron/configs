@@ -3,8 +3,10 @@ Which editor you choose has been a hot topic for time immemorial, with staunch s
 \
 Personally, I'm not super opinionated on my editor. I'm comfortable as long as I have Vim keybinds, syntax highlighting, and language server integrations. I currently use NeoVim the most, followed by spacemacs, then VSCode. I used to hate on VSCode heavy for being a Microsoft product, but honestly it has some nice extensions (e.g. remote-containers).
 ## How my NeoVim setup looks:
-![nvim_config_ss](https://user-images.githubusercontent.com/79671850/173436691-11fa70b9-d728-49fd-9e4c-5ddf17a23712.png)
+![nvim_config_ss](https://user-images.githubusercontent.com/79671850/173464975-2e60c938-14cd-4bdc-8dc9-330c51c27479.png)
 ## How my VSCode setup looks:
-![vscode_config_ss](https://user-images.githubusercontent.com/79671850/173436697-a8f365bb-ce17-4879-9367-6eb794100f3c.png)
+![vscode_config_ss](https://user-images.githubusercontent.com/79671850/173465431-4db2de6d-6929-419a-b259-e06e85e72c30.png)
 ## How my Spacemacs setup looks:
-![spacemacs_config_ss](https://user-images.githubusercontent.com/79671850/173438767-5181f5da-ac35-471e-9766-5c2ebbbedc6a.png)
+![spacemacs_config_ss](https://user-images.githubusercontent.com/79671850/173464979-98fa7716-0f09-4ebd-bddc-01b33ae8f6c5.png)
+
+
