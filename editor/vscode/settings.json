@@ -1,1 +1,145 @@
-
+{
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "[rust]": {
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4
+    },
+    "git.autofetch": true,
+    "files.eol": "\n",
+    "vim.handleKeys": {
+      "<C-t>": false,
+    },
+    "vim.leader": "\\",
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["j"],
+        "after": ["g", "j"]
+      },
+      {
+        "before": ["k"],
+        "after": ["g", "k"]
+      },
+      {
+        "before": ["t", "j"],
+        "commands": ["workbench.action.nextEditor"]
+      },
+      {
+        "before": ["t", "k"],
+        "commands": ["workbench.action.previousEditor"]
+      },
+      {
+        "before": ["t", "w"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>", "z"],
+        "commands": ["workbench.action.toggleZenMode"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": [":w"]
+      },
+      {
+        "before": ["<leader>", "d"],
+        "commands": ["editor.action.showHover"]
+      },
+      {
+        "before": ["<leader>", "t"],
+        "commands": ["editor.action.peekTypeDefinition"]
+      },
+      {
+        "before": ["<leader>", "g"],
+        "commands": ["editor.action.revealDefinition"]
+      },
+      {
+        "before": ["<leader>", "c"],
+        "commands": ["rust-analyzer.run"]
+      },
+      {
+        "before": ["<c-j>"],
+        "commands": ["editor.action.marker.nextInFiles"]
+      },
+      {
+        "before": ["<c-k>"],
+        "commands": ["editor.action.marker.prevInFiles"]
+      }
+    ],
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "Inconsolata",
+    "terminal.integrated.fontFamily": "Inconsolata Regular",
+    "git.confirmSync": false,
+    "vim.useSystemClipboard": true,
+    "terminal.integrated.scrollback": 100000,
+    "go.useLanguageServer": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+    "[typescript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.rulers": [
+      80
+    ],
+    "git.enableSmartCommit": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remote.SSH.remotePlatform": {
+      "cdn-team-do-amos-2": "linux",
+      "galaxy": "linux"
+    },
+    "terminal.integrated.tabs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "window.restoreWindows": "none",
+    "editor.quickSuggestions": false,
+    "window.autoDetectColorScheme": true,
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+      "**/.hg/store/**": true,
+      "/target/**": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": true,
+      "plaintext": false,
+      "markdown": false
+    },
+    "terminal.integrated.fontSize": 16,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.lineHeight": 0,
+    "editor.fontSize": 18,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontLigatures": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "window.zoomLevel": -1
+  }
