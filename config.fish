@@ -1,11 +1,18 @@
 abbr -a yr 'cal -y'
 abbr -a c cargo
-abbr -a e vim
+abbr -a e nvim
 abbr -a m make
 abbr -a o xdg-open
+abbr -a find fd
+abbr -a grep rg
+abbr -a vim nvim
 abbr -a g git
-abbr -a gc 'git checkout'
+abbr -a gc 'git commit'
+abbr -a gch 'git checkout'
 abbr -a ga 'git add -p'
+abbr -a mv 'mv -i'
+abbr -a mkdir 'mkdir -p'
+abbr -a df 'df -h'
 abbr -a vimdiff 'nvim -d'
 abbr -a ct 'cargo t'
 abbr -a amz 'env AWS_SECRET_ACCESS_KEY=(pass www/aws-secret-key | head -n1)'
@@ -18,8 +25,8 @@ abbr -a pr 'gh pr create -t (git show -s --format=%s HEAD) -b (git show -s --for
 complete --command paru --wraps pacman
 
 if status --is-interactive
-	if test -d ~/dev/others/base16/templates/fish-shell
 		set fish_function_path $fish_function_path ~/dev/others/base16/templates/fish-shell/functions
+	if test -d ~/dev/others/base16/templates/fish-shell
 		builtin source ~/dev/others/base16/templates/fish-shell/conf.d/base16.fish
 	end
 	if ! set -q TMUX
@@ -34,6 +41,11 @@ else
 	abbr -a p 'sudo pacman'
 	abbr -a up 'sudo pacman -Syu'
 end
+
+# kluge vector art shortcut
+#if command -v > /dev/null
+#	abbr -a kluge './go/bin/kluge -filepath <input file> -threshold 0.90 -minDist 80 -output <output file>'
+#end
 
 if command -v exa > /dev/null
 	abbr -a l 'exa'
@@ -110,25 +122,6 @@ function remote_alacritty
 	ssh $argv[1] rm "alacritty.ti"
 end
 
-function remarkable
-	if test (count $argv) -lt 1
-		echo "No files given"
-		return
-	end
-
-	ip addr show up to 10.11.99.0/29 | grep enp2s0f0u3 >/dev/null
-	if test $status -ne 0
-		# not yet connected
-		echo "Connecting to reMarkable internal network"
-		sudo dhcpcd enp2s0f0u3
-	end
-	for f in $argv
-		echo "-> uploading $f"
-		curl --form "file=@\""$f"\"" http://10.11.99.1/upload
-		echo
-	end
-	sudo dhcpcd -k enp2s0f0u3
-end
 
 # Type - to move up to top parent dir which is a repository
 function d
@@ -139,6 +132,7 @@ function d
 		cd ..
 	end
 end
+
 
 # Fish git prompt
 set __fish_git_prompt_showuntrackedfiles 'yes'
@@ -161,9 +155,6 @@ setenv FZF_DEFAULT_COMMAND 'fd --type file --follow'
 setenv FZF_CTRL_T_COMMAND 'fd --type file --follow'
 setenv FZF_DEFAULT_OPTS '--height 20%'
 
-setenv OS_USERNAME nmcaron@protonmail.ch
-setenv OS_TENANT_NAME usersandbox_nicholi
-
 # Fish should not add things to clipboard when killing
 # See https://github.com/fish-shell/fish-shell/issues/772
 set FISH_CLIPBOARD_CMD "cat"
@@ -177,5 +168,7 @@ end
 
 function fish_greeting
 	neofetch
+    mullvad connect
+    mullvad status
 	echo "Lets goooooo"
 end
